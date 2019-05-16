@@ -1,0 +1,15 @@
+-------------------- Auto-Git Log --------------------
+		Thu May 16 2019 07:58:45 GMT+0530 (India Standard Time)
+------------------------------------------------------
+
+Modified files:
+* dockerfile
+
+
+Created files:
+
+
+Deleted files:
+
+
+Renamed files:
