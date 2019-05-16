@@ -143,7 +143,7 @@ RUN curl https://s3.amazonaws.com/aws-cloudwatch/downloads/latest/awslogs-agent-
 RUN cat <<EOF >/root/awslogs.conf
 [general]
 state_file = /var/log/apache2/access.log
-
+log_group_name = value
 ## Your config file would have a lot more with the logs that you want to monitor and send to Cloudwatch
 EOF
 RUN mkdir -p /root/.aws && touch /root/.aws/credentials
