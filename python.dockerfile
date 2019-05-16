@@ -145,4 +145,9 @@ RUN cat <<EOF >/root/awslogs.conf
 state_file = /var/awslogs/state/agent-state
 ## Your config file would have a lot more with the logs that you want to monitor and send to Cloudwatch
 EOF
-RUN 
+RUN echo Creating aws credentials in /root/.aws/credentials
+cat <<EOF > /root/.aws/credentials
+[default]
+aws_access_key_id = YOUR_AWS_ACCESS_KEY_HERE
+aws_secret_access_key = YOUR_AWS_SECRET_KEY_HERE
+EOF
