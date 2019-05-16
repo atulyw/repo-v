@@ -152,3 +152,5 @@ aws_access_key_id = YOUR_AWS_ACCESS_KEY_HERE
 aws_secret_access_key = YOUR_AWS_SECRET_KEY_HERE
 EOF
 
+RUN echo Downloading cloudwatch logs setup agent
+cd /root
