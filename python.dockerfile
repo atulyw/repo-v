@@ -1,4 +1,4 @@
-FROM 
+FROM python
 ENV centos=3.8.0a4-alpine3.9
 RUN yum install httpd httpd-tools -y && echo "My Website" >> /var/www/html/index.html
 RUN 
