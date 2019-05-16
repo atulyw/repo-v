@@ -145,3 +145,4 @@ RUN cat <<EOF >/root/awslogs.conf
 state_file = /var/awslogs/state/agent-state
 ## Your config file would have a lot more with the logs that you want to monitor and send to Cloudwatch
 EOF
+RUN 
