@@ -2,7 +2,8 @@ FROM centos
 ENV centos=centos7
 RUN yum install httpd httpd-tools -y && echo "My Website" >> /var/www/html/index.html
 #CMD [ "/usr/sbin/httpd","-D","FOREGROUND" ]
-RUN yum install -y https://centos7.iuscommunity.org/ius-release.rpm
+RUN yum install -y https://centos7.iuscommunity.org/ius-release.rpm -y
+
 
 
 
