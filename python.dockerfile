@@ -142,7 +142,6 @@ CMD ["httpd-foreground"]
 RUN curl https://s3.amazonaws.com/aws-cloudwatch/downloads/latest/awslogs-agent-setup.py -O && chmod +x awslogs-agent-setup
 RUN echo -e "[/var/log/apache2/access.log]\ state_file = /var/log/apache2/access.log\ log_group_name = log-docker " > /root/awslogs.conf
 RUN mkdir -p /root/.aws && touch /root/.aws/credentials
-RUN echo Creating aws credentials in /root/.aws/credentials
 cat <<EOF > /root/.aws/credentials
 [default]
 aws_access_key_id = AKIATMAG2QJAK4YKVNMW
