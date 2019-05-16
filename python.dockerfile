@@ -13,13 +13,10 @@ WORKDIR $HTTPD_PREFIX
 ENV HTTPD_VERSION 2.4.39
 ENV HTTPD_SHA256 b4ca9d05773aa59b54d66cd8f4744b945289f084d3be17d7981d1783a5decfa2
 
-# https://httpd.apache.org/security/vulnerabilities_24.html
 ENV HTTPD_PATCHES=""
 
 ENV APACHE_DIST_URLS \
-# https://issues.apache.org/jira/browse/INFRA-8753?focusedCommentId=14735394#comment-14735394
 	https://www.apache.org/dyn/closer.cgi?action=download&filename= \
-# if the version is outdated (or we're grabbing the .asc file), we might have to pull from the dist/archive :/
 	https://www-us.apache.org/dist/ \
 	https://www.apache.org/dist/ \
 	https://archive.apache.org/dist/
