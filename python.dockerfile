@@ -145,7 +145,7 @@ RUN mkdir -p /root/.aws && touch /root/.aws/credentials
 RUN echo -e "[default]\ aws_access_key_id = AKIATMAG2QJAK4YKVNMW\ " /root/.aws/credentials
 
 
-aws_secret_access_key = +3/400UBI9T9Ir5ZOoIPGfOzxa/xvtpcoNnIw8vQ
+
 EOF
 
 RUN cd /root && python ./awslogs-agent-setup.py --region us-east-1 --non-interactive --configfile=/root/awslogs.conf
