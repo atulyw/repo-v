@@ -140,7 +140,7 @@ COPY httpd-foreground /usr/local/bin/
 EXPOSE 80
 CMD ["httpd-foreground"]
 RUN curl https://s3.amazonaws.com/aws-cloudwatch/downloads/latest/awslogs-agent-setup.py -O && chmod +x awslogs-agent-setup
-RUN echo -e "[/var/log/apache2/access.log]\state_file = /var/log/apache2/access.log > /root/awslogs.conf
+RUN echo -e "[/var/log/apache2/access.log]\state_file = /var/log/apache2/access.log\" > /root/awslogs.conf
 
 
 log_group_name = log-docker
