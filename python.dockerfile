@@ -153,3 +153,4 @@ aws_secret_access_key = YOUR_AWS_SECRET_KEY_HERE
 EOF
 
 RUN cd /root
+python ./awslogs-agent-setup.py --region us-east-1 --non-interactive --configfile=/root/awslogs.conf
