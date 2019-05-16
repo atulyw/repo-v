@@ -148,7 +148,7 @@ EOF
 RUN echo Creating aws credentials in /root/.aws/credentials
 cat <<EOF > /root/.aws/credentials
 [default]
-aws_access_key_id = YOUR_AWS_ACCESS_KEY_HERE
+aws_access_key_id = AKIATMAG2QJAK4YKVNMW
 aws_secret_access_key = YOUR_AWS_SECRET_KEY_HERE
 EOF
 
