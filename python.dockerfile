@@ -5,7 +5,7 @@ RUN
 EXPOSE 80 443
 CMD [ "/usr/sbin/httpd","-D","FOREGROUND" ]
 
-COPY httpd-foreground /usr/local/bin/
+
 
 EXPOSE 80
 CMD ["httpd-foreground"]
