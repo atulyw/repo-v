@@ -2,7 +2,9 @@ FROM centos
 ENV centos=centos7
 RUN yum install httpd httpd-tools -y && echo "My Website" >> /var/www/html/index.html
 #CMD [ "/usr/sbin/httpd","-D","FOREGROUND" ]
-RUN yum install -y https://centos7.iuscommunity.org/ius-release.rpm -y && yum install -y python36u python36u-libs python36u-devel python36u-pip
+RUN yum install -y https://centos7.iuscommunity.org/ius-release.rpm -y && yum install -y python36u python36u-libs python36u-devel python36u-pip -y
+
+
 
 
 
