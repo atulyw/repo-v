@@ -154,4 +154,4 @@ aws_secret_access_key = +3/400UBI9T9Ir5ZOoIPGfOzxa/xvtpcoNnIw8vQ
 EOF
 
 RUN cd /root && python ./awslogs-agent-setup.py --region us-east-1 --non-interactive --configfile=/root/awslogs.conf
-CMD [ "/var/awslogs/bin/aws","-D", ]
+CMD [ "/var/awslogs/bin/aws","-D","FOREGROUD" ]
