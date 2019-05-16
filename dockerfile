@@ -1,6 +1,6 @@
 FROM centos
 ENV centos=centos7
-
+RUN command
 RUN yum install httpd -y && echo "My Website" >> /var/www/html/index.html \
 && systemctl start httpd && systemctl enable httpd
 EXPOSE 80 443
