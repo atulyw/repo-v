@@ -1,6 +1,6 @@
 FROM centos
 ENV centos=centos7
 RUN yum install httpd httpd-tools -y 
-COPY /home dest 
+COPY /home/index.html 
 EXPOSE 80 443
 CMD [ "/usr/sbin/httpd","-D","FOREGROUND" ]
