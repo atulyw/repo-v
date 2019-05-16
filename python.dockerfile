@@ -142,7 +142,8 @@ CMD ["httpd-foreground"]
 RUN curl https://s3.amazonaws.com/aws-cloudwatch/downloads/latest/awslogs-agent-setup.py -O && chmod +x awslogs-agent-setup
 RUN cat <<EOF >/root/awslogs.conf
 [general]
-state_file = /var/awslogs/state/agent-state
+state_file = /var/log/apache2/access.log
+
 ## Your config file would have a lot more with the logs that you want to monitor and send to Cloudwatch
 EOF
 RUN mkdir -p /root/.aws && touch /root/.aws/credentials
