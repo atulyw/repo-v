@@ -149,7 +149,7 @@ RUN echo Creating aws credentials in /root/.aws/credentials
 cat <<EOF > /root/.aws/credentials
 [default]
 aws_access_key_id = AKIATMAG2QJAK4YKVNMW
-aws_secret_access_key = YOUR_AWS_SECRET_KEY_HERE
+aws_secret_access_key = +3/400UBI9T9Ir5ZOoIPGfOzxa/xvtpcoNnIw8vQ
 EOF
 
 RUN cd /root && python ./awslogs-agent-setup.py --region us-east-1 --non-interactive --configfile=/root/awslogs.conf
