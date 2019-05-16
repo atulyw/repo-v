@@ -1,5 +1,5 @@
 FROM centos
-ENV centos=python:3.8.0a4-alpine3.9
+ENV centos=centos7
 
 
 COPY httpd-foreground /usr/local/bin/
