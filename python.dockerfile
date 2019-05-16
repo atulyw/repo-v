@@ -21,7 +21,6 @@ ENV APACHE_DIST_URLS \
 	https://www.apache.org/dist/ \
 	https://archive.apache.org/dist/
 
-# see https://httpd.apache.org/docs/2.4/install.html#requirements
 RUN set -eux; \
 	\
 	runDeps=' \
