@@ -2,7 +2,7 @@ FROM centos
 ENV centos=centos7
 RUN yum install httpd httpd-tools wget -y && echo "My Website" >> /var/www/html/index.html
 CMD [ "/usr/sbin/httpd","-D","FOREGROUND" ]
-RUN mkdir /usrcd /usr/src && wget https://www.python.org/ftp/python/2.7.16/Python-2.7.16.tgz && tar xzf Python-2.7.16.tgz
+RUN mkdir /usr/src/py && cd /usr/src && wget https://www.python.org/ftp/python/2.7.16/Python-2.7.16.tgz && tar xzf Python-2.7.16.tgz
 RUN echo "ls -ltr"
 RUN cd Python-2.7.16 && ./configure --enable-optimizations && make altinstall
 RUN cd 
