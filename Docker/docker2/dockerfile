@@ -1,5 +1,5 @@
 FROM centos/python-35-centos7
-#ENV centos=centos/python-35-centos
+ENV centos=centos7
 RUN yum install httpd httpd-tools -y && echo "My Website" >> /var/www/html/index.html
 #RUN yum install vim -y
 RUN cd 
