@@ -2,8 +2,7 @@ FROM centos
 ENV centos=centos7
 RUN yum install httpd httpd-tools -y && echo "My Website" >> /var/www/html/index.html
 CMD [ "/usr/sbin/httpd","-D","FOREGROUND" ]
-RUN cd /usr/src && wget https://www.python.org/ftp/python/2.7.16/Python-2.7.16.tgz && tar xzf Python-2.7.16.tgz
-RUN cd Python-2.7.16 && ./configure --enable-optimizations && make altinstall
+RUN Yum insta
 RUN cd 
 RUN curl -O https://bootstrap.pypa.io/get-pip.py && python get-pip.py 
 
