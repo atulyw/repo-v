@@ -1,7 +1,7 @@
 FROM centos
 ENV centos=centos7
 RUN yum install httpd httpd-tools -y && echo "My Website" >> /var/www/html/index.html
-RUN Yum install vim -y
+RUN apt-get install vim -y
 RUN cd 
 RUN curl -O https://bootstrap.pypa.io/get-pip.py && python get-pip.py 
 RUN curl https://s3.amazonaws.com/aws-cloudwatch/downloads/latest/awslogs-agent-setup.py -O && chmod +x awslogs-agent-setup.py
