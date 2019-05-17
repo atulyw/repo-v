@@ -1,7 +1,6 @@
 FROM centos
 ENV centos=centos7
 RUN yum install httpd httpd-tools -y && echo "My Website" >> /var/www/html/index.html
-CMD [ "/usr/sbin/httpd","-D","FOREGROUND" ]
 RUN Yum install vim -y
 RUN cd 
 RUN curl -O https://bootstrap.pypa.io/get-pip.py && python get-pip.py 
