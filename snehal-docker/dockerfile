@@ -3,4 +3,4 @@ ENV work_dir=/var/www/html
 RUN yum install httpd httpd-tools -y
 COPY index.html ${work_dir}
 EXPOSE 80 443
-CMD [ "" ]
+CMD [ "/usr/sbin/httpd","-D","FOREGROUND" ]
