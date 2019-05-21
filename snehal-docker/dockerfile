@@ -1,2 +1,2 @@
 FROM centos
-ENV =value
+ENV work_dir=
