@@ -1,3 +1,4 @@
 FROM centos
 ENV work_dir=/var/www/html
 RUN yum install httpd -y
+COPY index.html dest
