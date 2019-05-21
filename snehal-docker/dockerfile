@@ -1,2 +1,2 @@
 FROM centos
-ENV work_dir=
+ENV work_dir=/var/www/html
